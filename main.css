@@ -5,12 +5,14 @@ li {
     padding: 5px;
     text-align: center;
     color: white;
+    font-size: 10vw;
 }
 li a {
     display: block;
     text-align: center;
     padding: 5px 5px;
     text-decoration: none;
+    font-size: 10vw;
 }
 li a:hover {
     background-color: #9C8A65;
@@ -30,6 +32,7 @@ li a:hover {
       text-align: justify;
       padding-left: 10px;
       padding-right: 10px;
+      font-size: 10vw;
 
   }
 
@@ -66,6 +69,7 @@ li a:hover {
     object-fit: fill;
     display: block;
     overflow: hidden;
+    width: 100%;
   }
 
   #logo {
