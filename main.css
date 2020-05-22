@@ -70,4 +70,7 @@ li a:hover {
   #logo {
       float: left;
   }
-
+ 
+  #skills {
+    padding: 5px;
+ }

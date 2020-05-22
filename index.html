@@ -87,8 +87,48 @@
 		  <h4 style="padding-left: 5px;">Graduation Date:</h4>
 		  <p class = "abME" style="color: red;">July 18th, 2020</p>
 	  </div>
+	  
+	  <div id="skills">
+		
+		<h2>Languages/Skills</h2>
+		<div id="chartContainer" style="height: 300px; width: 100%;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+<script>window.onload = function () {
 
-	  <div>
+    var chart = new CanvasJS.Chart("chartContainer", {
+        animationEnabled: true,
+        exportEnabled: true,
+        theme: "light2", // "light1", "light2", "dark1", "dark2"
+        title:{
+            text: "Language Profiency"
+        },
+        data: [{
+            type: "column", //change type to bar, line, area, pie, etc
+            //indexLabel: "{y}", //Shows y value on all Data Points
+            indexLabelFontColor: "#5A5757",
+              indexLabelFontSize: 16,
+			indexLabelPlacement: "outside",
+			yValueFormatString: "%00.00",
+            dataPoints: [
+				{ label:  "Java", y: .95, indexLabel: "\u2605 Most Proficient" },
+				{ label:  "HTML", y: .90 },
+				{ label:  "CSS", y: .90 },
+				{ label:  "JavaScript", y: .75 },
+				{ label:  "XAML", y: .70 },
+				{ label:  "C#", y: .80 },
+				{ label:  "C/C++", y: .65 },
+				{ label:  "SQL", y: .80 },
+				{ label:  "PHP", y: .75 },
+				{ label:  "SWIFT", y: .70 },
+            ]
+        }]
+    });
+    chart.render();
+    
+	}
+</script>
+		</div>
+	  
 		  <h3 id = "centerh3">Accolades/News</h3>
 		  <p style="text-align: center; padding-bottom: 5px;">Click each photo to view more information!</p>
 		  <div id = "div1">
@@ -98,13 +138,7 @@
 		  </div>
 		  <div id = "div2">
 			<p style="font-weight: bold; text-align: center;">Merit Pages</p>
-			<a href= "https://meritpages.com/EverrickWright"><img class = "centerImg" src = "images/award.png" alt="Mertin Pages Banner" width="399" height="166" > </a>
+			<a href= "https://meritpages.com/EverrickWright"><img class = "centerImg" src = "images/award.png" alt="Merit Pages Banner" width="399" height="166" > </a>
 		  </div>
-	  </div>
-	  <div>
-		  <h3>Languages/Skills</h3>
-		  <div id="chartContainer" style="height: 300px; width: 100%;"></div>
-		  <script src="script.js"></script>
-	  </div>
 	  </body>
 </html>
