@@ -69,7 +69,6 @@ li a:hover {
     object-fit: fill;
     display: block;
     overflow: hidden;
-    width: 100%;
   }
 
   #logo {
